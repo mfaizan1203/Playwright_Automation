@@ -27,4 +27,5 @@ let sports = Array<string>()
         let arrayResults = results.split(' ')
         console.log("For sport " + sports[i] + " the search number is " + arrayResults[1])
     }//end of for loop
+    //hello tester
 })//end of test 
