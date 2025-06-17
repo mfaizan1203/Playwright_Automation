@@ -1,0 +1,21 @@
+{
+  "name": "playwright_automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "bingTest": "npx playwright test /src/test/BingSearch.spec.ts --headed --workers=1 --project=chrome --reporter=html",
+    "smokeTests": "npx playwright test --grep @smoke /src/test/* --headed --workers=1 --project=chrome --reporter=html",
+    "uspsTest": "npx playwright test /src/test/usps_test.spec.ts --headed --workers=1 --project=chrome --project=safari --reporter=html",
+    "wwTest": "npx playwright test /src/test/WeightWatchers.spec.ts --headed --workers=1 --project=chrome --project=safari --reporter=html",
+    "bingLoop": "npx playwright test /src/test/bingsearch_loop.spec.ts --headed --workers=1 --project=chrome --reporter=html"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.30"
+  }
+}
